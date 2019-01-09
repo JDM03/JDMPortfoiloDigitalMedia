@@ -9,12 +9,34 @@
 <body>
 <div class="container">
   <div class="header">
-  	<h1> About Me</h1>
+  	<h1> <img src="Images/AboutMe.png" width="960" height="150" alt=""/></h1>
   </div>
   <div class="nav">
     <h3><a href="index.html">Home</a> | <a href="raster.html">Raster</a> | <a href="vector.html">Vector</a> | <a href="audio.html">Audio</a> | <a href="animation.html">Animation</a> | <a href="video.html">Video</a></h3>
   </div>
-  <div class="content">Hello World!</div>
+  <div class="content">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <label for="lname"><br>
+      Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <label for="country2"><br>
+      Reviewer</label>
+    <select id="country" name="country">
+      <option value="australia">Employer</option>
+      <option value="canada">Counselor</option>
+      <option value="usa">Teacher</option>
+    </select>
+    <label for="subject2"><br>
+      Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
   <div class="footer">
     <h4><a href="aboutme.html">About Me</a> | Contact | Copyright 2018</h4> 
   </div>
